@@ -18,7 +18,7 @@
     <header id="header">
         <div class="container header-content">
             <a class="logo" href="#inicio" aria-label="A+FIT, início">
-                <span class="logo-text">A+<span>FIT</span></span>
+                <img src="assets/logo/logo.png" class="logo-img" width="79" height="82">
             </a>
             
             <nav class="nav-menu" id="nav-menu" aria-label="Navegação principal">
@@ -26,7 +26,6 @@
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#academia">A Academia</a></li>
                     <li><a href="#estrutura">Estrutura</a></li>
-                    <li><a href="#crossfit">CrossFit</a></li>
                     <li><a href="#horarios">Horários</a></li>
                     <li><a href="#resultados">Resultados</a></li>
                     <li><a href="#produtos">Produtos</a></li>
@@ -35,7 +34,7 @@
             </nav>
 
             <div class="header-actions">
-                <a href="https://wa.me/SEUNUMERO" class="btn btn-primary btn-sm"><i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp</a>
+                <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20academia%20A%2BFIT." class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp</a>
                 <button type="button" class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
                     <i data-lucide="menu" class="menu-open-icon" aria-hidden="true"></i>
                     <i data-lucide="x" class="menu-close-icon" aria-hidden="true"></i>
@@ -47,16 +46,20 @@
     <main>
     <section id="inicio" class="hero" aria-labelledby="hero-title">
         <!-- Fotografia ilustrativa do Unsplash; substituir pela foto da A+FIT quando disponível. -->
-        <img src="assets/banner/academia.jpg" alt="Fotografia ilustrativa de halteres e de uma pessoa treinando em uma academia" class="hero-bg" width="2200" height="1467" fetchpriority="high">
+        <img src="assets/banner/academia.jpg" class="hero-bg" width="2200" height="1467" fetchpriority="high">
+        <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content">
             <div class="hero-copy">
                 <span class="eyebrow">A+FIT Academia · Sua evolução começa aqui</span>
-                <h1 id="hero-title">SUPERE SEUS<br><span>LIMITES.</span><br>DESCUBRA SUA<br><span>FORÇA.</span></h1>
-                <p><strong>Mais do que uma academia.</strong><br>Um espaço para superar limites, conquistar resultados e transformar sua rotina.</p>
-                <div class="hero-btns">
-                    <a href="#academia" class="btn btn-primary">Conheça a academia <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
-                    <a href="https://wa.me/SEUNUMERO" class="btn btn-secondary">Quero começar</a>
-                </div>
+                <h1 id="hero-title">
+                    <span class="hero-title-line">SUPERE SEUS <span>LIMITES.</span></span>
+                    <span class="hero-title-line">DESCUBRA SUA <span>FORÇA.</span></span>
+                </h1>
+                <p><strong>Sua primeira aula é gratuita.</strong><br>Um espaço para superar limites, conquistar resultados e transformar sua rotina.</p>
+            </div>
+            <div class="hero-btns">
+                <a href="#academia" class="btn btn-primary">Conheça a academia <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Quero%20agendar%20minha%20primeira%20aula%20gratuita%20na%20A%2BFIT.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Agende sua aula gratuita</a>
             </div>
             <aside class="hero-performance" aria-label="A+FIT Performance">
                 <span class="performance-label">A+FIT Performance</span>
@@ -76,50 +79,76 @@
                 <a href="#estrutura" class="text-link">Conheça nossa estrutura <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
             </div>
             <div class="about-image">
-                <img src="assets/motivacao/motivacao.png" alt="Arte motivacional da academia A+FIT" loading="lazy">
+                <img src="assets/motivacao/motivacao.png" width="350" height="489" loading="lazy">
             </div>
         </div>
     </section>
 
     <section id="estrutura" class="structure" aria-labelledby="structure-title">
-        <div class="container">
-            <div class="section-header section-header-split">
-                <div>
-                    <span class="eyebrow">Nossa estrutura</span>
-                    <h2 id="structure-title">SEU ESPAÇO.<br><span>SEU PRÓXIMO NÍVEL.</span></h2>
-                </div>
-                <p>Conheça de perto os ambientes da A+FIT e encontre seu lugar para evoluir.</p>
+        <div class="container training-grid">
+            <div class="training-text">
+                <span class="eyebrow">Musculação</span>
+                <h2 id="structure-title">SEU ESPAÇO.<br><span>SEU PRÓXIMO NÍVEL.</span></h2>
+                <p>Na A+FIT, você não treina sozinho.</p>
+                <a href="#ambientes" class="text-link">Conheça a academia por dentro <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
             </div>
-            <div class="structure-gallery">
-                <figure class="structure-item">
-                    <div class="photo-placeholder" role="img" aria-label="Espaço reservado para uma fotografia real da musculação da A+FIT">
-                        <i data-lucide="image" aria-hidden="true"></i>
-                        <span>Foto da musculação</span>
-                    </div>
-                    <figcaption><span>01</span><h3>Musculação</h3></figcaption>
-                </figure>
-                <figure class="structure-item">
-                    <div class="photo-placeholder" role="img" aria-label="Espaço reservado para uma fotografia real dos ambientes da A+FIT">
-                        <i data-lucide="image" aria-hidden="true"></i>
-                        <span>Foto dos ambientes</span>
-                    </div>
-                    <figcaption><span>02</span><h3>A A+FIT por dentro</h3></figcaption>
-                </figure>
-            </div>
+            <figure class="training-photo">
+                <img src="assets/treino/treino.png" width="374" height="416" loading="lazy">
+                <figcaption>Musculação na A+FIT</figcaption>
+            </figure>
         </div>
     </section>
 
-    <section id="crossfit" class="crossfit" aria-labelledby="crossfit-title">
-        <div class="container crossfit-grid">
-            <div class="photo-placeholder crossfit-image" role="img" aria-label="Espaço reservado para uma fotografia real da área de CrossFit da A+FIT">
-                <i data-lucide="image" aria-hidden="true"></i>
-                <span>Foto da área de CrossFit</span>
+    <section id="ambientes" class="facilities" aria-labelledby="facilities-title">
+        <div class="container">
+            <div class="section-header section-header-split">
+                <div>
+                    <span class="eyebrow">Conheça a academia</span>
+                    <h2 id="facilities-title">A+FIT<br><span>POR DENTRO.</span></h2>
+                </div>
+                <p id="facilities-note">Fotos ilustrativas de outras academias.</p>
             </div>
-            <div class="crossfit-text">
-                <span class="eyebrow">CrossFit A+FIT</span>
-                <h2 id="crossfit-title">MAIS MOVIMENTO.<br><span>MAIS SUPERAÇÃO.</span></h2>
-                <p>Uma área dedicada ao CrossFit para quem quer dar um novo ritmo à rotina de treino.</p>
-                <a href="https://wa.me/SEUNUMERO" class="btn btn-primary">Conheça o CrossFit <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <div class="facilities-carousel" role="region" aria-roledescription="carrossel" aria-labelledby="facilities-title" aria-describedby="facilities-note">
+                <div class="carousel-track" id="facilities-track" tabindex="0" aria-label="Fotografias dos ambientes">
+                    <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 de 4">
+                        <img src="assets/estrutura/pesos.jpg" width="1600" height="1067" loading="lazy">
+                        <figcaption>
+                            <span>Equipamentos e pesos</span>
+                            <a href="https://unsplash.com/photos/assorted-gym-equipment-inside-the-gym-XKimW0pke6w" target="_blank" rel="noopener noreferrer">Mark Bertulfo / Unsplash</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 4">
+                        <img src="assets/estrutura/musculacao.jpg" width="1600" height="1067" loading="lazy">
+                        <figcaption>
+                            <span>Espaço de treino</span>
+                            <a href="https://unsplash.com/photos/w7jYaN7GqyA" target="_blank" rel="noopener noreferrer">Rick Barrett / Unsplash</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 de 4">
+                        <img src="assets/estrutura/cardio.jpg" width="1600" height="1068" loading="lazy">
+                        <figcaption>
+                            <span>Ambiente de cardio</span>
+                            <a href="https://www.pexels.com/photo/interior-of-modern-fitness-club-with-various-machines-and-equipment-7031705/" target="_blank" rel="noopener noreferrer">Max Vakhtbovych / Pexels</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 de 4">
+                        <img src="assets/estrutura/ambiente.jpg" width="1600" height="1067" loading="lazy">
+                        <figcaption>
+                            <span>Vista dos ambientes</span>
+                            <a href="https://www.pexels.com/photo/interior-of-gym-17227606/" target="_blank" rel="noopener noreferrer">hi room / Pexels</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="carousel-controls" hidden>
+                    <div class="carousel-progress">
+                        <div class="carousel-dots" role="group" aria-label="Escolher fotografia"></div>
+                        <span class="carousel-counter" aria-live="polite" aria-atomic="true">01 / 04</span>
+                    </div>
+                    <div class="carousel-arrows">
+                        <button type="button" class="carousel-arrow carousel-prev" aria-label="Foto anterior" title="Foto anterior" aria-controls="facilities-track" disabled><i data-lucide="arrow-left" aria-hidden="true"></i></button>
+                        <button type="button" class="carousel-arrow carousel-next" aria-label="Próxima foto" title="Próxima foto" aria-controls="facilities-track"><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -130,22 +159,27 @@
                 <span class="eyebrow">Horários</span>
                 <h2>ENCAIXE O TREINO <br><span>NA SUA ROTINA.</span></h2>
                 <p>Funcionamos em horários amplos durante a semana e também aos sábados para você manter a constância.</p>
+                <div class="schedule-trial">
+                    <p><strong>Primeira aula gratuita.</strong><br>Venha conhecer a A+FIT e experimentar um treino com a gente.</p>
+                    <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Quero%20agendar%20minha%20primeira%20aula%20gratuita%20na%20A%2BFIT.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Agende sua aula gratuita <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                    <span>Agendamento pelo WhatsApp</span>
+                </div>
             </div>
 
             <div class="schedule-list">
                 <div class="schedule-card">
-                    <i data-lucide="calendar-days"></i>
+                    <span class="schedule-icon"><i data-lucide="calendar-days" aria-hidden="true"></i></span>
                     <div>
                         <h3>Segunda a sexta</h3>
                         <div class="schedule-times">
-                            <span>06h às 12h</span>
-                            <span>14h às 22h</span>
+                            <span>06h às 22h</span>
                         </div>
+                        <p class="schedule-status">Aberto direto, sem pausa para almoço.</p>
                     </div>
                 </div>
 
                 <div class="schedule-card">
-                    <i data-lucide="clock"></i>
+                    <span class="schedule-icon"><i data-lucide="clock" aria-hidden="true"></i></span>
                     <div>
                         <h3>Sábados</h3>
                         <div class="schedule-times">
@@ -154,7 +188,16 @@
                     </div>
                 </div>
 
-                <p class="schedule-note">Durante a semana, há intervalo de funcionamento entre 12h e 14h.</p>
+                <div class="schedule-card">
+                    <span class="schedule-icon"><i data-lucide="calendar-x" aria-hidden="true"></i></span>
+                    <div>
+                        <h3>Domingos</h3>
+                        <div class="schedule-times">
+                            <span>Fechado</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -163,27 +206,39 @@
         <div class="container">
             <div class="section-header">
                 <span class="eyebrow">Resultados</span>
-                <h2>EVOLUÇÕES QUE INSPIRAM.</h2>
+                <h2 id="results-title">EVOLUÇÕES QUE INSPIRAM.</h2>
                 <p>Alguns resultados reais de quem decidiu começar e manter a constância.</p>
             </div>
             
-            <div class="results-grid">
-                <figure class="result-card">
-                    <img src="assets/resultados/resultado.png" alt="Antes e depois de aluna da A+FIT" loading="lazy">
-                    <figcaption>Transformação com acompanhamento</figcaption>
-                </figure>
-                <figure class="result-card">
-                    <img src="assets/resultados/resultado2.png" alt="Evolução corporal de aluna da A+FIT" loading="lazy">
-                    <figcaption>Mais força e disposição</figcaption>
-                </figure>
-                <figure class="result-card">
-                    <img src="assets/resultados/resultado3.png" alt="Resultado de aluna da A+FIT" loading="lazy">
-                    <figcaption>Constância que aparece</figcaption>
-                </figure>
-                <figure class="result-card">
-                    <img src="assets/resultados/resultado4.png" alt="Antes e depois de aluna da A+FIT" loading="lazy">
-                    <figcaption>Disciplina em evolução</figcaption>
-                </figure>
+            <div class="results-carousel" role="region" aria-roledescription="carrossel" aria-labelledby="results-title">
+                <div class="carousel-track results-track" id="results-track" tabindex="0" aria-label="Resultados dos alunos">
+                    <figure class="result-card" role="group" aria-roledescription="slide" aria-label="1 de 4">
+                        <img src="assets/resultados/resultado.png" width="519" height="334" loading="lazy">
+                        <figcaption>Transformação com acompanhamento</figcaption>
+                    </figure>
+                    <figure class="result-card" role="group" aria-roledescription="slide" aria-label="2 de 4">
+                        <img src="assets/resultados/resultado2.png" width="497" height="324" loading="lazy">
+                        <figcaption>Mais força e disposição</figcaption>
+                    </figure>
+                    <figure class="result-card" role="group" aria-roledescription="slide" aria-label="3 de 4">
+                        <img src="assets/resultados/resultado3.png" width="470" height="318" loading="lazy">
+                        <figcaption>Constância que aparece</figcaption>
+                    </figure>
+                    <figure class="result-card" role="group" aria-roledescription="slide" aria-label="4 de 4">
+                        <img src="assets/resultados/resultado4.png" width="461" height="318" loading="lazy">
+                        <figcaption>Disciplina em evolução</figcaption>
+                    </figure>
+                </div>
+                <div class="carousel-controls" hidden>
+                    <div class="carousel-progress">
+                        <div class="carousel-dots" role="group" aria-label="Escolher resultados"></div>
+                        <span class="carousel-counter" aria-live="polite" aria-atomic="true">01 / 02</span>
+                    </div>
+                    <div class="carousel-arrows">
+                        <button type="button" class="carousel-arrow carousel-prev" aria-label="Resultados anteriores" title="Resultados anteriores" aria-controls="results-track" disabled><i data-lucide="arrow-left" aria-hidden="true"></i></button>
+                        <button type="button" class="carousel-arrow carousel-next" aria-label="Próximos resultados" title="Próximos resultados" aria-controls="results-track"><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -199,27 +254,27 @@
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="assets/produtos/pretreino.png" alt="Pré-treino Magic disponível na A+FIT" loading="lazy">
+                        <img src="assets/produtos/pretreino.png" width="222" height="261" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h4>Pré-treino Magic</h4>
                         <p>Uma opção para quem busca mais energia e foco antes do treino.</p>
-                        <span class="price">Consulte Valor</span>
+                        <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Gostaria%20de%20saber%20o%20valor%20e%20a%20disponibilidade%20do%20pr%C3%A9-treino%20Magic%20na%20A%2BFIT." class="price" target="_blank" rel="noopener noreferrer" aria-label="Consultar valor do pré-treino Magic pelo WhatsApp">Consulte Valor</a>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-img">
-                        <img src="assets/produtos/pretreino2.png" alt="Pré-treino Vitamin Horse disponível na A+FIT" loading="lazy">
+                        <img src="assets/produtos/pretreino2.png" width="235" height="291" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h4>Pré-treino Vitamin Horse</h4>
                         <p>Produto disponível para complementar sua rotina com orientação adequada.</p>
-                        <span class="price">Consulte Valor</span>
+                        <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Gostaria%20de%20saber%20o%20valor%20e%20a%20disponibilidade%20do%20pr%C3%A9-treino%20Vitamin%20Horse%20na%20A%2BFIT." class="price" target="_blank" rel="noopener noreferrer" aria-label="Consultar valor do pré-treino Vitamin Horse pelo WhatsApp">Consulte Valor</a>
                     </div>
                 </div>
             </div>
             <div class="center">
-                <a href="https://wa.me/SEUNUMERO" class="btn btn-secondary">CONSULTE OS PRODUTOS PELO WHATSAPP</a>
+                <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20os%20produtos%20e%20suplementos%20dispon%C3%ADveis%20na%20A%2BFIT." class="btn btn-secondary" target="_blank" rel="noopener noreferrer">CONSULTE OS PRODUTOS PELO WHATSAPP</a>
             </div>
         </div>
     </section>
@@ -235,45 +290,38 @@
             <div class="plans-grid">
                 <div class="plan-card">
                     <div class="plan-header">
-                        <h3>Básico</h3>
-                        <div class="plan-price">R$ <span>99,90</span>/mês</div>
+                        <h3>Diária</h3>
+                        <div class="plan-price">R$ <span>30,00</span></div>
+                        <p class="plan-period">Por dia</p>
                     </div>
-                    <ul class="plan-features">
-                        <li><i data-lucide="check"></i> Acesso total Musculação</li>
-                        <li><i data-lucide="check"></i> Avaliação Física Inicial</li>
-                        <li><i data-lucide="check"></i> App de Treinos</li>
-                        <li class="disabled"><i data-lucide="x"></i> Acesso ao CrossFit</li>
-                    </ul>
-                    <a href="https://wa.me/SEUNUMERO" class="btn btn-outline">TENHO INTERESSE</a>
+                    <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Tenho%20interesse%20na%20di%C3%A1ria%20da%20A%2BFIT.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="Consultar a diária pelo WhatsApp">TENHO INTERESSE</a>
                 </div>
 
                 <div class="plan-card featured">
                     <div class="plan-header">
-                        <span class="badge">Mais Popular</span>
-                        <h3>Premium</h3>
-                        <div class="plan-price">R$ <span>159,90</span>/mês</div>
+                        <h3>Mensal</h3>
+                        <div class="plan-price">R$ <span>100,00</span></div>
+                        <p class="plan-period">Por mês</p>
                     </div>
-                    <ul class="plan-features">
-                        <li><i data-lucide="check"></i> Acesso total Musculação</li>
-                        <li><i data-lucide="check"></i> Avaliação Física Mensal</li>
-                        <li><i data-lucide="check"></i> App de Treinos Avançado</li>
-                        <li><i data-lucide="check"></i> 1 Aula de CrossFit/Semana</li>
-                    </ul>
-                    <a href="https://wa.me/SEUNUMERO" class="btn btn-primary">TENHO INTERESSE</a>
+                    <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20mensal%20da%20A%2BFIT.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Consultar o plano mensal pelo WhatsApp">TENHO INTERESSE</a>
                 </div>
 
                 <div class="plan-card">
                     <div class="plan-header">
-                        <h3>Elite</h3>
-                        <div class="plan-price">R$ <span>229,90</span>/mês</div>
+                        <h3>6 meses</h3>
+                        <div class="plan-price">R$ <span>550,00</span></div>
+                        <p class="plan-period">Total pelos 6 meses</p>
                     </div>
-                    <ul class="plan-features">
-                        <li><i data-lucide="check"></i> Acesso total Musculação</li>
-                        <li><i data-lucide="check"></i> Acesso Ilimitado CrossFit</li>
-                        <li><i data-lucide="check"></i> Consultoria Nutricional</li>
-                        <li><i data-lucide="check"></i> Acesso VIP a Eventos</li>
-                    </ul>
-                    <a href="https://wa.me/SEUNUMERO" class="btn btn-outline">TENHO INTERESSE</a>
+                    <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20de%206%20meses%20da%20A%2BFIT.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="Consultar o plano de 6 meses pelo WhatsApp">TENHO INTERESSE</a>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>1 ano</h3>
+                        <div class="plan-price">R$ <span>1.100,00</span></div>
+                        <p class="plan-period">Total pelo ano</p>
+                    </div>
+                    <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20anual%20da%20A%2BFIT.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="Consultar o plano anual pelo WhatsApp">TENHO INTERESSE</a>
                 </div>
             </div>
         </div>
@@ -285,7 +333,7 @@
                 <span class="eyebrow">Seu próximo passo</span>
                 <h2>SUA TRANSFORMAÇÃO<br>COMEÇA COM UMA <span>DECISÃO.</span></h2>
                 <p>Venha conhecer a A+FIT, descubra nossa estrutura e encontre a experiência de treinamento ideal para você.</p>
-                <a href="https://wa.me/SEUNUMERO" class="btn btn-primary btn-lg">FALE COM A A+FIT NO WHATSAPP</a>
+                <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Quero%20conhecer%20a%20A%2BFIT%20e%20saber%20como%20come%C3%A7ar%20a%20treinar." class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">FALE COM A A+FIT NO WHATSAPP</a>
             </div>
         </div>
     </section>
@@ -295,7 +343,7 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <div class="logo">
-                    <span class="logo-text">A+<span>FIT</span></span>
+                    <img src="assets/logo/logo.png" class="logo-img" width="79" height="82" loading="lazy">
                 </div>
                 <p>Transformando esforço em resultado. A melhor estrutura para sua evolução física e mental.</p>
                 <div class="social-links">
@@ -309,7 +357,6 @@
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#academia">A Academia</a></li>
                     <li><a href="#estrutura">Estrutura</a></li>
-                    <li><a href="#crossfit">CrossFit</a></li>
                     <li><a href="#horarios">Horários</a></li>
                     <li><a href="#resultados">Resultados</a></li>
                     <li><a href="#produtos">Produtos</a></li>
@@ -319,8 +366,8 @@
             <div class="footer-info">
                 <h4>Contato & Local</h4>
                 <p><i data-lucide="map-pin"></i> Rua da Força, 123 - Centro</p>
-                <p><i data-lucide="clock"></i> Seg a Sex: 06h às 12h e 14h às 22h | Sáb: 08h às 12h</p>
-                <p><i data-lucide="phone"></i> (11) 99999-9999</p>
+                <p><i data-lucide="clock"></i> Seg a Sex: 06h às 22h | Sáb: 08h às 12h | Dom: fechado</p>
+                <p><i data-lucide="phone" aria-hidden="true"></i> <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20academia%20A%2BFIT." target="_blank" rel="noopener noreferrer" aria-label="Fale com a A+FIT pelo WhatsApp no número (64) 99999-9687">(64) 99999-9687</a></p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -328,7 +375,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/SEUNUMERO" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale com a A+FIT pelo WhatsApp">
+    <a href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20academia%20A%2BFIT." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale com a A+FIT pelo WhatsApp">
         <i data-lucide="message-circle" aria-hidden="true"></i>
     </a>
 
