@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A+FIT | Seu Próximo Nível Começa Aqui</title>
+    <meta name="description" content="Conheça a academia A+FIT, confira os horários, acompanhe resultados e encontre um plano para começar sua evolução.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="assets/banner/academia.jpg">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container header-content">
+            <a class="logo" href="#inicio" aria-label="A+FIT, início">
+                <span class="logo-text">A+<span>FIT</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#academia">A Academia</a></li>
+                    <li><a href="#estrutura">Estrutura</a></li>
+                    <li><a href="#crossfit">CrossFit</a></li>
+                    <li><a href="#horarios">Horários</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/SEUNUMERO" class="btn btn-primary btn-sm"><i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp</a>
+                <button type="button" class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
+                    <i data-lucide="menu" class="menu-open-icon" aria-hidden="true"></i>
+                    <i data-lucide="x" class="menu-close-icon" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <!-- Fotografia ilustrativa do Unsplash; substituir pela foto da A+FIT quando disponível. -->
+        <img src="assets/banner/academia.jpg" alt="Fotografia ilustrativa de halteres e de uma pessoa treinando em uma academia" class="hero-bg" width="2200" height="1467" fetchpriority="high">
+        <div class="container hero-content">
+            <div class="hero-copy">
+                <span class="eyebrow">A+FIT Academia · Sua evolução começa aqui</span>
+                <h1 id="hero-title">SUPERE SEUS<br><span>LIMITES.</span><br>DESCUBRA SUA<br><span>FORÇA.</span></h1>
+                <p><strong>Mais do que uma academia.</strong><br>Um espaço para superar limites, conquistar resultados e transformar sua rotina.</p>
+                <div class="hero-btns">
+                    <a href="#academia" class="btn btn-primary">Conheça a academia <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/SEUNUMERO" class="btn btn-secondary">Quero começar</a>
+                </div>
+            </div>
+            <aside class="hero-performance" aria-label="A+FIT Performance">
+                <span class="performance-label">A+FIT Performance</span>
+                <p>Sua melhor versão<br>começa aqui.</p>
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </aside>
+        </div>
+        <a class="hero-photo-credit" href="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" target="_blank" rel="noopener noreferrer">Fotografia ilustrativa · Unsplash</a>
+    </section>
+
+    <section id="academia" class="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="eyebrow">Sobre Nós</span>
+                <h2>TREINE COM PROPÓSITO. <br><span>EVOLUA TODOS OS DIAS.</span></h2>
+                <p>Um espaço para cuidar de você, superar seus limites e construir sua melhor versão. Conheça a A+FIT e descubra uma experiência de treinamento pensada para fazer parte da sua rotina.</p>
+                <a href="#estrutura" class="text-link">Conheça nossa estrutura <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="about-image">
+                <img src="assets/motivacao/motivacao.png" alt="Arte motivacional da academia A+FIT" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="estrutura" class="structure" aria-labelledby="structure-title">
+        <div class="container">
+            <div class="section-header section-header-split">
+                <div>
+                    <span class="eyebrow">Nossa estrutura</span>
+                    <h2 id="structure-title">SEU ESPAÇO.<br><span>SEU PRÓXIMO NÍVEL.</span></h2>
+                </div>
+                <p>Conheça de perto os ambientes da A+FIT e encontre seu lugar para evoluir.</p>
+            </div>
+            <div class="structure-gallery">
+                <figure class="structure-item">
+                    <div class="photo-placeholder" role="img" aria-label="Espaço reservado para uma fotografia real da musculação da A+FIT">
+                        <i data-lucide="image" aria-hidden="true"></i>
+                        <span>Foto da musculação</span>
+                    </div>
+                    <figcaption><span>01</span><h3>Musculação</h3></figcaption>
+                </figure>
+                <figure class="structure-item">
+                    <div class="photo-placeholder" role="img" aria-label="Espaço reservado para uma fotografia real dos ambientes da A+FIT">
+                        <i data-lucide="image" aria-hidden="true"></i>
+                        <span>Foto dos ambientes</span>
+                    </div>
+                    <figcaption><span>02</span><h3>A A+FIT por dentro</h3></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="crossfit" class="crossfit" aria-labelledby="crossfit-title">
+        <div class="container crossfit-grid">
+            <div class="photo-placeholder crossfit-image" role="img" aria-label="Espaço reservado para uma fotografia real da área de CrossFit da A+FIT">
+                <i data-lucide="image" aria-hidden="true"></i>
+                <span>Foto da área de CrossFit</span>
+            </div>
+            <div class="crossfit-text">
+                <span class="eyebrow">CrossFit A+FIT</span>
+                <h2 id="crossfit-title">MAIS MOVIMENTO.<br><span>MAIS SUPERAÇÃO.</span></h2>
+                <p>Uma área dedicada ao CrossFit para quem quer dar um novo ritmo à rotina de treino.</p>
+                <a href="https://wa.me/SEUNUMERO" class="btn btn-primary">Conheça o CrossFit <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="horarios" class="schedule">
+        <div class="container schedule-grid">
+            <div class="schedule-text">
+                <span class="eyebrow">Horários</span>
+                <h2>ENCAIXE O TREINO <br><span>NA SUA ROTINA.</span></h2>
+                <p>Funcionamos em horários amplos durante a semana e também aos sábados para você manter a constância.</p>
+            </div>
+
+            <div class="schedule-list">
+                <div class="schedule-card">
+                    <i data-lucide="calendar-days"></i>
+                    <div>
+                        <h3>Segunda a sexta</h3>
+                        <div class="schedule-times">
+                            <span>06h às 12h</span>
+                            <span>14h às 22h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-card">
+                    <i data-lucide="clock"></i>
+                    <div>
+                        <h3>Sábados</h3>
+                        <div class="schedule-times">
+                            <span>08h às 12h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="schedule-note">Durante a semana, há intervalo de funcionamento entre 12h e 14h.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resultados" class="results">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Resultados</span>
+                <h2>EVOLUÇÕES QUE INSPIRAM.</h2>
+                <p>Alguns resultados reais de quem decidiu começar e manter a constância.</p>
+            </div>
+            
+            <div class="results-grid">
+                <figure class="result-card">
+                    <img src="assets/resultados/resultado.png" alt="Antes e depois de aluna da A+FIT" loading="lazy">
+                    <figcaption>Transformação com acompanhamento</figcaption>
+                </figure>
+                <figure class="result-card">
+                    <img src="assets/resultados/resultado2.png" alt="Evolução corporal de aluna da A+FIT" loading="lazy">
+                    <figcaption>Mais força e disposição</figcaption>
+                </figure>
+                <figure class="result-card">
+                    <img src="assets/resultados/resultado3.png" alt="Resultado de aluna da A+FIT" loading="lazy">
+                    <figcaption>Constância que aparece</figcaption>
+                </figure>
+                <figure class="result-card">
+                    <img src="assets/resultados/resultado4.png" alt="Antes e depois de aluna da A+FIT" loading="lazy">
+                    <figcaption>Disciplina em evolução</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Na A+FIT</span>
+                <h2>SEU TREINO, SEUS COMPLEMENTOS.</h2>
+                <p>Confira alguns dos produtos disponíveis na A+FIT.</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/produtos/pretreino.png" alt="Pré-treino Magic disponível na A+FIT" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Pré-treino Magic</h4>
+                        <p>Uma opção para quem busca mais energia e foco antes do treino.</p>
+                        <span class="price">Consulte Valor</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/produtos/pretreino2.png" alt="Pré-treino Vitamin Horse disponível na A+FIT" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Pré-treino Vitamin Horse</h4>
+                        <p>Produto disponível para complementar sua rotina com orientação adequada.</p>
+                        <span class="price">Consulte Valor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <a href="https://wa.me/SEUNUMERO" class="btn btn-secondary">CONSULTE OS PRODUTOS PELO WHATSAPP</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos" class="plans">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Planos</span>
+                <h2>ESCOLHA SEU PLANO. <br><span>COMECE SUA EVOLUÇÃO.</span></h2>
+                <p>Encontre a opção ideal para sua rotina e dê o próximo passo.</p>
+            </div>
+
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Básico</h3>
+                        <div class="plan-price">R$ <span>99,90</span>/mês</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Acesso total Musculação</li>
+                        <li><i data-lucide="check"></i> Avaliação Física Inicial</li>
+                        <li><i data-lucide="check"></i> App de Treinos</li>
+                        <li class="disabled"><i data-lucide="x"></i> Acesso ao CrossFit</li>
+                    </ul>
+                    <a href="https://wa.me/SEUNUMERO" class="btn btn-outline">TENHO INTERESSE</a>
+                </div>
+
+                <div class="plan-card featured">
+                    <div class="plan-header">
+                        <span class="badge">Mais Popular</span>
+                        <h3>Premium</h3>
+                        <div class="plan-price">R$ <span>159,90</span>/mês</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Acesso total Musculação</li>
+                        <li><i data-lucide="check"></i> Avaliação Física Mensal</li>
+                        <li><i data-lucide="check"></i> App de Treinos Avançado</li>
+                        <li><i data-lucide="check"></i> 1 Aula de CrossFit/Semana</li>
+                    </ul>
+                    <a href="https://wa.me/SEUNUMERO" class="btn btn-primary">TENHO INTERESSE</a>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Elite</h3>
+                        <div class="plan-price">R$ <span>229,90</span>/mês</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Acesso total Musculação</li>
+                        <li><i data-lucide="check"></i> Acesso Ilimitado CrossFit</li>
+                        <li><i data-lucide="check"></i> Consultoria Nutricional</li>
+                        <li><i data-lucide="check"></i> Acesso VIP a Eventos</li>
+                    </ul>
+                    <a href="https://wa.me/SEUNUMERO" class="btn btn-outline">TENHO INTERESSE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <span class="eyebrow">Seu próximo passo</span>
+                <h2>SUA TRANSFORMAÇÃO<br>COMEÇA COM UMA <span>DECISÃO.</span></h2>
+                <p>Venha conhecer a A+FIT, descubra nossa estrutura e encontre a experiência de treinamento ideal para você.</p>
+                <a href="https://wa.me/SEUNUMERO" class="btn btn-primary btn-lg">FALE COM A A+FIT NO WHATSAPP</a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-text">A+<span>FIT</span></span>
+                </div>
+                <p>Transformando esforço em resultado. A melhor estrutura para sua evolução física e mental.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram da A+FIT"><i data-lucide="instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Facebook da A+FIT"><i data-lucide="facebook" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#academia">A Academia</a></li>
+                    <li><a href="#estrutura">Estrutura</a></li>
+                    <li><a href="#crossfit">CrossFit</a></li>
+                    <li><a href="#horarios">Horários</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h4>Contato & Local</h4>
+                <p><i data-lucide="map-pin"></i> Rua da Força, 123 - Centro</p>
+                <p><i data-lucide="clock"></i> Seg a Sex: 06h às 12h e 14h às 22h | Sáb: 08h às 12h</p>
+                <p><i data-lucide="phone"></i> (11) 99999-9999</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 A+FIT Academia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/SEUNUMERO" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale com a A+FIT pelo WhatsApp">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
