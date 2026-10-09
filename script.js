@@ -1,51 +1,82 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Inicializa ícones do Lucide
-    lucide.createIcons();
+    if (window.lucide) {
+        window.lucide.createIcons();
+    }
 
-    // Menu Mobile Toggle
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const navMenu = document.getElementById('nav-menu');
+    const mobileLayout = window.matchMedia('(max-width: 1100px)');
+
+    function setMenuOpen(isOpen, restoreFocus = false) {
+        navMenu.classList.toggle('active', isOpen);
+        document.body.classList.toggle('menu-open', isOpen);
+        mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+        mobileMenuBtn.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+        navMenu.inert = mobileLayout.matches && !isOpen;
+
+        if (restoreFocus) {
+            mobileMenuBtn.focus();
+        }
+    }
+
+    setMenuOpen(false);
 
     mobileMenuBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        const icon = mobileMenuBtn.querySelector('i');
-        
-        // Troca ícone de menu para X ao abrir
-        if (navMenu.classList.contains('active')) {
-            icon.setAttribute('data-lucide', 'x');
-        } else {
-            icon.setAttribute('data-lucide', 'menu');
-        }
-        lucide.createIcons();
+        const isOpen = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+        setMenuOpen(!isOpen);
     });
 
-    // Fecha menu mobile ao clicar em link
     document.querySelectorAll('.nav-menu a').forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            mobileMenuBtn.querySelector('i').setAttribute('data-lucide', 'menu');
-            lucide.createIcons();
+            setMenuOpen(false);
         });
     });
 
-    // Efeito de scroll no Header
+    document.addEventListener('keydown', event => {
+        if (mobileMenuBtn.getAttribute('aria-expanded') !== 'true') {
+            return;
+        }
+
+        if (event.key === 'Escape') {
+            setMenuOpen(false, true);
+        }
+    });
+
+    document.addEventListener('click', event => {
+        if (!event.target.closest('#header')) {
+            setMenuOpen(false);
+        }
+    });
+
+    mobileLayout.addEventListener('change', () => setMenuOpen(false));
+
     const header = document.getElementById('header');
 
-    window.addEventListener('scroll', () => {
-        header.classList.toggle('scrolled', window.scrollY > 50);
-    });
+    function updateHeader() {
+        header.classList.toggle('scrolled', window.scrollY > 20);
+    }
 
-    // Smooth Scroll para links internos
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                window.scrollTo({
-                    top: target.offsetTop - 80,
-                    behavior: 'smooth'
-                });
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    if (!reducedMotion.matches && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('is-pending');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.about-text, .about-image, .section-header, .structure-item, .crossfit-text, .crossfit-image, .schedule-text, .schedule-card, .result-card, .product-card, .plan-card, .cta-content').forEach(element => {
+            element.classList.add('reveal');
+            if (element.getBoundingClientRect().top >= window.innerHeight) {
+                element.classList.add('is-pending');
             }
+            observer.observe(element);
         });
-    });
+    }
 });
